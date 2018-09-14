@@ -2,7 +2,6 @@
 A simple publish/subscribe implementation for node and the browser.
 
 ## Installation
-Use:
 ```
 npm i @harryhope/messenger
 ```
@@ -20,20 +19,20 @@ messenger.send('myEvent', 'Elvis')
 
 ## API
 
-#### messenger.on
+### messenger.on
 Subscribe to an event/topic with a callback function.
 ```js
 const myCallback = str => console.log(`Hello ${str}`)
 messenger.on('hello', myCallback)
 ```
 
-#### messenger.off
+### messenger.off
 Unsubscribe to an event.
 ```js
 messenger.off('hello', myCallback)
 ```
 
-#### messenger.send
+### messenger.send
 Broadcast a message to all subscribers of an event.
 ```js
 messenger.send('hello', 'world')
