@@ -1,0 +1,27 @@
+{
+  "name": "@harryhope/messenger",
+  "version": "0.1.0",
+  "description": "Simple pub/sub implementation for node and the browser",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx babel ./src/index.js -d dist",
+    "test": "npx jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harryhope/messenger.js.git"
+  },
+  "author": "Harry Hope",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harryhope/messenger.js/issues"
+  },
+  "homepage": "https://github.com/harryhope/messenger.js#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^23.6.0"
+  }
+}
